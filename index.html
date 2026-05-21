@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Предприятие 3826 — Atomic Heart</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+   <header>
+       <nav>
+           <div class="logo">Atomic Heart</div>
+           <ul>
+               <li><a href="#home">Главная</a></li>
+               <li><a href="#about">О Предприятии</a></li>
+               <li><a href="#gallery">Кадры из игры</a></li>
+           </ul>
+           <button id="themeToggle">Сменить тему</button>
+       </nav>
+   </header>
+
+   <section id="home" class="hero fade-in-element">
+       <div class="hero-content">
+           <h1>Добро пожаловать на Предприятие 3826</h1>
+           <p>Узнайте тайны альтернативного СССР, где робототехника и нейросети стали реальностью.</p>
+           <button class="cta-button" onclick="showAlert()">Запустить «Коллектив»</button>
+       </div>
+   </section>
+
+   <section id="about" class="content-section">
+       <h2 class="fade-in-element">Дополнения (DLC)</h2>
+       
+       <!-- ИНТЕРАКТИВНЫЙ СЛАЙДЕР С ОКОШКАМИ ДЛЯ 4 DLC -->
+       <div class="slider-container fade-in-element">
+           
+           <!-- Слайд 1: Инстинкт Истребления -->
+           <div class="dlc-slide active">
+               <div class="dlc-text-side">
+                   
+                   <h3>DLC 1: Инстинкт Истребления</h3>
+                   <p>Возвращайтесь на Предприятие 3826, чтобы обуздать сошедший с ума искусственный интеллект Элеонора в секретном комплексе «Менделеев». Вас ждут новые роботы-трансформеры, оружие «Секатор» и щит управления временем на перчатке!</p>
+               </div>
+               <div class="dlc-image-side">
+                   <img src="images/dlc1.jpeg" alt="Инстинкт Истребления" class="dlc-main-image">
+               </div>
+           </div>
+
+           <!-- Слайд 2: Узник Лимбо -->
+           <div class="dlc-slide">
+               <div class="dlc-text-side">
+                   
+                   <h3>DLC 2: Узник Лимбо</h3>
+                   <p>Погрузитесь в безумный, красочный мир Лимбо! Узнайте, что творится в подсознании майора Нечаева. Необычный геймплей с вертикальными сахарными платформами, боевые механики с измененными правилами и раскрытие тайн прошлого П-3.</p>
+               </div>
+               <div class="dlc-image-side">
+                   <img src="images/dlc2.jpeg" alt="Узник Лимбо" class="dlc-main-image">
+               </div>
+           </div>
+
+           <!-- Слайд 3: DLC 3 -->
+           <div class="dlc-slide">
+               <div class="dlc-text-side">
+                   
+                   <h3>DLC 3: Чары морских глубин</h3>
+                   <p>История расширяет свои границы. Игроку предстоит отправиться в комплекс Тритон Предприятия 3826. Впереди — новые виды уникального советского оружия, умные боссы-роботы и глубокие сюжетные ответы на вопросы оригинальной игры.</p>
+               </div>
+               <div class="dlc-image-side">
+                   <img src="images/dlc3.jpeg" alt="Дополнение 3" class="dlc-main-image">
+               </div>
+           </div>
+
+           <!-- Слайд 4: DLC 4 -->
+           <div class="dlc-slide">
+               <div class="dlc-text-side">
+                  
+                   <h3>DLC 4: Кровь на хрустале</h3>
+                   <p>Грандиозное завершение истории основной игры. Все нити сюжета сходятся воедино. Сразитесь с Хразом и выясните все самые сокравенные тайны альт СССР
+               </div>
+               <div class="dlc-image-side">
+                   <img src="images/dlc4.jpeg" alt="Дополнение 4" class="dlc-main-image">
+               </div>
+           </div>
+
+           <button class="slider-btn prev-btn" onclick="changeSlide(-1)">❮</button>
+           <button class="slider-btn next-btn" onclick="changeSlide(1)">❯</button>
+       </div>
+
+       <hr style="border: none; height: 1px; background: rgba(168, 35, 35, 0.15); margin: 50px 0;">
+
+       <h2 class="fade-in-element">Инновации будущего</h2>
+       <p class="fade-in-element">Предприятие 3826 — это засекреченный научно-производственный комплекс, объединивший лучшие умы человечества ради технологического прорыва.</p>
+
+       <div class="card-container fade-in-element">
+           <div class="card">
+               <h3>Утопия или хаос?</h3>
+               <p>Главный научный центр страны подарил миру роботов-помощников и уникальный полимер, но идеальный порядок оказался под угрозой срыва.</p>
+           </div>
+
+           <div class="card">
+               <h3>Система «Коллектив»</h3>
+               <p>Искусственный интеллект связывает каждого робота в единую сеть. Достаточно одной искры, чтобы эта великая сеть обратилась против своих создателей.</p>
+           </div>
+       </div>
+   </section>
+
+   <section id="gallery" class="content-section">
+       <h2 class="fade-in-element">Галерея Предприятия</h2>
+       <p style="margin-bottom: 20px; font-size: 10pt; color: #777;" class="fade-in-element">(нажмите на кадр для увеличения)</p>
+       <div class="image-grid fade-in-element">
+           <img src="images/SSSR2.webp" alt="Близняшки">
+           <img src="images/SSSR1.jpeg" alt="Технологии будущего">
+           <img src="images/SSSR.jpeg" alt="Альтернативный СССР">
+       </div>
+   </section>
+
+   <footer>
+       <p>© 2026 Отдел кадров Предприятия 3826. За Семью Печатями.</p>
+   </footer>
+
+   <!-- КРУТОЕ МОДАЛЬНОЕ ОКНО ДЛЯ ПРОСМОТРА КАРТИНОК -->
+   <div id="imageModal" class="modal">
+       <span class="modal-close">&times;</span>
+       <img class="modal-content" id="fullImage">
+       <div id="modalCaption"></div>
+   </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
